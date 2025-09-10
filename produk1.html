@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cardigan Lembut - Toko Online</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Toko Online Sederhana</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="produk1.html">Produk</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- detail produk -->
+  <main class="container">
+    <section class="detail-produk">
+      <div class="thumb">
+        <img src="https://images.pexels.com/photos/9603626/pexels-photo-9603626.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cardigan Lembut">
+      </div>
+      <div class="info">
+        <h2>Cardigan Lembut</h2>
+        <p class="price">Rp 100.000</p>
+        <p>Cardigan lembut terbuat dari bahan premium. Nyaman dipakai sehari-hari maupun untuk acara santai.</p>
+
+        <!-- form variasi produk -->
+        <form onsubmit="return buyProduct('Cardigan Lembut', 'warna1', 'ukuran1')">
+          <label for="warna1">Pilih Warna</label>
+          <select id="warna1" required>
+            <option value="">-- Pilih Warna --</option>
+            <option value="Hitam">Hitam</option>
+            <option value="Abu-abu">Abu-abu</option>
+            <option value="Coklat">Coklat</option>
+          </select>
+
+          <label for="ukuran1">Pilih Ukuran</label>
+          <select id="ukuran1" required>
+            <option value="">-- Pilih Ukuran --</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+
+          <button type="submit" class="btn-buy">Beli</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- lihat produk lainnya (thumbnail link) -->
+    <section>
+      <h3>Produk Lainnya</h3>
+      <div class="produk-row">
+        <a href="produk2.html"><img src="https://images.pexels.com/photos/850801/pexels-photo-850801.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Lipstik YSL"></a>
+        <a href="produk3.html"><img src="https://images.pexels.com/photos/8801036/pexels-photo-8801036.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Tas Kecil Casual"></a>
+        <a href="produk4.html"><img src="https://images.pexels.com/photos/29899576/pexels-photo-29899576.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Parfum YSL"></a>
+        <a href="produk5.html"><img src="https://images.pexels.com/photos/8365682/pexels-photo-8365682.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Tas Prada Putih"></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Email: indriadisti7@gmail.com | Telp: 085143326413 | Kota: Bandung</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+

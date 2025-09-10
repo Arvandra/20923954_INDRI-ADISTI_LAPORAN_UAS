@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lipstik YSL - Toko Online</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Toko Online Sederhana</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="produk1.html">Produk</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="detail-produk">
+      <div class="thumb">
+        <img src="https://images.pexels.com/photos/850801/pexels-photo-850801.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lipstik YSL">
+      </div>
+      <div class="info">
+        <h2>Lipstik YSL</h2>
+        <p class="price">Rp 800.000</p>
+        <p>Lipstik YSL dengan warna elegan, cocok untuk berbagai tone kulit. Tahan lama.</p>
+
+        <form onsubmit="return buyProduct('Lipstik YSL', 'warna2', null)">
+          <label for="warna2">Pilih Warna</label>
+          <select id="warna2" required>
+            <option value="">-- Pilih Warna --</option>
+            <option value="Merah">Merah</option>
+            <option value="Nude">Nude</option>
+            <option value="Pink">Pink</option>
+          </select>
+
+          <button type="submit" class="btn-buy">Beli</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <h3>Produk Lainnya</h3>
+      <div class="produk-row">
+        <a href="produk1.html"><img src="https://images.pexels.com/photos/9603626/pexels-photo-9603626.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Cardigan"></a>
+        <a href="produk3.html"><img src="https://images.pexels.com/photos/8801036/pexels-photo-8801036.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Tas"></a>
+        <a href="produk4.html"><img src="https://images.pexels.com/photos/29899576/pexels-photo-29899576.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Parfum"></a>
+        <a href="produk5.html"><img src="https://images.pexels.com/photos/8365682/pexels-photo-8365682.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Tas Prada"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Email: indriadisti7@gmail.com | Telp: 085143326413 | Kota: Bandung</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+  
+
+

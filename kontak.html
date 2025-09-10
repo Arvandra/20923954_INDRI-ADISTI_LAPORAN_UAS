@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontak - Toko Online</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Toko Online Sederhana</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="produk1.html">Produk</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Kontak Kami</h2>
+    <section class="kontak">
+      <form id="contactForm" onsubmit="return submitContact(event)">
+        <label for="namaKontak">Nama</label>
+        <input id="namaKontak" type="text" required>
+
+        <label for="emailKontak">Email</label>
+        <input id="emailKontak" type="email" required>
+
+        <label for="pesanKontak">Pesan</label>
+        <textarea id="pesanKontak" rows="5" required></textarea>
+
+        <button type="submit" class="btn-buy">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Email: indriadisti7@gmail.com | Telp: 085143326413 | Kota: Bandung</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+

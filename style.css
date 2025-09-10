@@ -1,0 +1,57 @@
+/* style.css - styling sederhana & responsive */
+
+/* Reset/minor */
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; background: #fafafa; }
+
+/* container */
+.container { max-width: 980px; margin: 0 auto; padding: 16px; }
+
+/* header */
+.site-header { background: #222; color: #fff; }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; }
+.brand { margin: 8px 0; font-size: 20px; }
+.main-nav a { color: #fff; text-decoration: none; margin-left: 12px; }
+.main-nav a:hover { text-decoration: underline; }
+
+/* produk grid di index */
+.produk-grid { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 12px; }
+.item { width: calc(50% - 16px); background: #fff; border: 1px solid #e2e2e2; border-radius: 6px; padding: 10px; text-align: center; }
+.item img { width: 100%; height: 160px; object-fit: cover; border-radius: 4px; }
+.item h3 { margin: 8px 0 4px; font-size: 16px; }
+.price { color: #2d6a4f; font-weight: bold; }
+
+/* detail produk */
+.detail-produk { display: flex; gap: 20px; align-items: flex-start; margin-top: 18px; background: #fff; padding: 14px; border: 1px solid #e6e6e6; border-radius: 6px; }
+.thumb { flex: 0 0 320px; }
+.thumb img { width: 100%; height: auto; display: block; border-radius: 6px; object-fit: cover; }
+.info { flex: 1; }
+.info .price { font-size: 18px; margin: 6px 0; }
+
+/* small product row */
+.produk-row { display: flex; gap: 10px; margin-top: 10px; }
+.produk-row img { width: 80px; height: 80px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd; }
+
+/* form & buttons */
+form { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+label { font-weight: 600; font-size: 14px; }
+select, input[type="text"], input[type="email"], textarea { padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+.btn-buy { background: #2d6a4f; color: #fff; border: none; padding: 10px 14px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+.btn-buy:hover { opacity: 0.95; }
+
+/* footer */
+.site-footer { background: #222; color: #fff; margin-top: 18px; padding: 14px 0; text-align: center; }
+
+/* responsive */
+@media (max-width: 760px) {
+  .item { width: calc(50% - 12px); }
+  .detail-produk { flex-direction: column; }
+  .thumb { width: 100%; }
+  .produk-row { justify-content: space-between; }
+}
+
+@media (max-width: 440px) {
+  .item { width: 100%; }
+}
+
+
